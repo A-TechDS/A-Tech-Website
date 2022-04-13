@@ -1,0 +1,93 @@
+.portf-content {
+    display: flex;
+}
+
+.portf-card-clickable {
+    display: flex;
+    align-items: center;
+}
+
+.portf-card {
+    display: inline-flex;
+    flex-direction: row;
+    box-sizing:border-box;
+    align-items: center;
+    margin: 25px 25px 0px 0px;
+
+    box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+    border-radius: 25px 50px;
+    background-color: #23252f;
+
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+} #first {
+    margin: 25px 25px 0px 25px;
+} .portf-card:hover {
+    cursor: pointer;
+    background-color: #3c3f4b5d;
+    box-shadow: 0 0 0.25em 0 #be4259;
+}
+
+.column {
+    flex-direction: column;
+    height: 100%;
+    margin: 0px auto;
+}
+
+.portf-card-h1 {
+    display: block;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.portf-card-img {
+    display: block;
+    width: 80%;
+    margin: 25px auto;
+
+    box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+} .portf-card:hover .portf-card-img {
+    cursor: pointer;
+    box-shadow: 0 0 0.25em 0 #be4259;
+}
+
+.portf-card-desc {
+    display: block;
+    padding: 50px 50px 0 10px ;
+    font-size: 0.9em;
+    width: 60%;
+
+    text-decoration: none;
+    color: #d9d9df;
+}
+
+@media screen and (max-width: 1900px) {
+    .portf-card {
+        flex-direction: column; 
+    }
+
+    .portf-card-desc {
+        width: 100%;
+        padding: 10px 25px;
+        margin: none;
+    }
+    
+}
+
+@media screen and (max-width: 736px) {
+    .portf-content {
+        flex-direction: column;
+    }
+
+    .portf-card, #first  {
+        margin: 25px auto;
+        width: 75%;
+        
+    }
+
+    .portf-card-clickable {
+        display: inline-flex;
+
+    }
+}

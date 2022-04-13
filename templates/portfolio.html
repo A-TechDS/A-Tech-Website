@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<link rel="stylesheet" href="/static/assets/css/portfolio.css">
+		<noscript><link rel="stylesheet" href="/static/assets/css/noscript.css" /></noscript>
+					<!-- Global site tag (gtag.js) - Google Analytics -->
+					<script async src="https://www.googletagmanager.com/gtag/js?id=G-715RDK09PR">
+					</script>
+					<script>
+					  window.dataLayer = window.dataLayer || [];
+					  function gtag(){dataLayer.push(arguments);}
+					  gtag('js', new Date());
+					
+					  gtag('config', 'G-715RDK09PR');
+					</script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="{{ url_for('index') }}">A-Tech Design Solutions</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="{{ url_for('index') }}">Home</a></li>
+							<li>
+								<a href="#">Day to Day</a>
+								<ul>
+									<li><a href="{{ url_for('ourstory') }}">Our Story</a></li>
+									<li><a href="{{ url_for('ourteam') }}">Our Team</a></li>
+									<li><a href="{{ url_for('process') }}">How we Work</a></li>
+									<li>
+										<a href="#">The Legal Stuff</a>
+										<ul>
+											<li><a href="#">Terms and Conditions</a></li>
+											<li><a href="#">Privacy Policy</a></li>
+											<li><a href="#">Terms of Use</a></li>
+											<li><a href="#">Careers</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="{{ url_for('portfolio') }}">Our Portfolio</a></li>
+							<li><a href="{{ url_for('consultation') }}" class="button primary">LETS GO!</a></li>
+						</ul>
+					</nav>
+				</header>
+
+                </div>
+                <!-- Main -->
+				<header class="major">
+					<br>
+					<h2>Our Portfolio</h2>
+					<p>A small collection of our past work.</p>
+					<p>Constantly updated</p>
+				</header>
+
+				<div class="portf-content">
+					
+					<!-- Each "portf-card" div is a template. -->
+					<div class="portf-card" id="first" onclick="location.href='#';"> <!-- Edit '#' in location.href to redirect to link'-->
+						<div class="column">
+							<!-- Title -->
+							<h1 class="portf-card-h1" href="#">AI Personal Assistant</h1>
+							<!-- Image -->
+							<img class="portf-card-img" src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2606&q=80">
+						</div>
+						<!-- Description -->
+						<p class="portf-card-desc">
+							A project undertaken by A-tech. This AI personal assistant is made with Python and can search the internet for absolutely anything you desire! It even searches for answers through Wikipedia. It can also play music from YouTube and voices can also be changed from female to male! 
+						</p>
+					</div>
+				
+					<div class="portf-card" onclick="location.href='#';">
+						<div class="column">
+							<h1 class="portf-card-h1" href="#">Madeleine Pizzuti</h1>
+							<img class="portf-card-img" src="https://images.unsplash.com/photo-1533561304446-88a43deb6229?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=778&q=80">
+						</div>
+						<p class="portf-card-desc">
+							Madeleines website was based on her new book that she wrote called ‘Bear’. We touched on a little bit about her story in life and then the books itself. 
+
+"It was quite by accident that I happened to stumble upon the A-Tech Team. As I'm quite illiterate when it comes to all things to do with technology, I was looking for someone to help me with my website. Hamish was there, at the ready, to look after all my problems and nothing was too difficult to handle. He has gone above and beyond to help me get the most out of my website and his suggestions have been invaluable. Thank you Hamish!"
+						</p>
+					</div>
+
+					
+					
+				</div>
+                </body>
+
+
+
+                <!-- Scripts -->
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/static/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/static/assets/js/browser.min.js"></script>
+			<script src="/static/assets/js/breakpoints.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
+			<script src="/static/assets/js/main.js"></script>

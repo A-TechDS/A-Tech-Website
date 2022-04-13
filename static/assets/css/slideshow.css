@@ -1,0 +1,41 @@
+.slide {
+    margin: 25px;
+    justify-items: center;
+    padding: 25px;
+    
+    background-color: #23252f;
+    box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
+    border-radius: 25px 50px;
+}
+
+.slide-h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slide-p {
+    text-align: center;
+}
+
+.slide-btn-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit {
+    font: inherit;
+    font-size: 0.8em;
+    font-weight: 500;
+    height: 2.5em;
+} .prev {
+    border-radius: 2px 15px;
+} .next {
+    border-radius: 15px 2px;
+} #first-next {
+    margin-left: auto;
+}
+
+.slide-input {
+    background-color: white;
+    margin: 25px 0;
+}

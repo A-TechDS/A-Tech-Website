@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>FREE CONSULTATION</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<link rel="stylesheet" href="/static/assets/css/slideshow.css" />
+		<noscript><link rel="stylesheet" href="/static/assets/css/noscript.css" /></noscript>
+		<script src="/static/assets/js/slideshow.js"></script>
+								<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-715RDK09PR">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-715RDK09PR');
+</script>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="{{ url_for('index') }}">A-Tech Design Solutions</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="{{ url_for('index') }}">Home</a></li>
+							<li>
+								<a href="#">Day to Day</a>
+								<ul>
+									<li><a href="{{ url_for('ourstory') }}">Our Story</a></li>
+									<li><a href="{{ url_for('ourteam') }}">Our Team</a></li>
+									<li><a href="{{ url_for('process') }}">How we Work</a></li>
+									<li>
+										<a href="#">The Legal Stuff</a>
+										<ul>
+											<li><a href="#">Terms and Conditions</a></li>
+											<li><a href="#">Privacy Policy</a></li>
+											<li><a href="#">Terms of Use</a></li>
+											<li><a href="#">Careers</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="{{url_for('portfolio')}}">Our Portfolio</a></li>
+							<li><a href="{{url_for('consultation')}}" class="button primary">LETS GO!</a></li>
+						</ul> 
+					</nav> 
+				</header>
+
+                </div>
+
+                <!-- Main -->
+				<header class="major">
+					<br>
+					<h2>Free Consultation</h2>
+					<p>Answer a few quick questions to begin</p>
+					<p>Once submitted, you will be redirected to our home page. We will get in touch as soon as possible. Thank you in advance</p>
+				</header>
+
+
+                <div class="slide">
+					<form action="{{ url_for('contact') }}" method="post">
+					<h1 class="slide-h1">Question 1</h1>
+					<p class="slide-p">
+						What is your Company Name?
+					</p>
+					<input type="text" class="slide-input" id="response" name="company_name" required />
+					<div class="slide-btn-div">
+						<button class="button primary submit next" id="first-next" onclick="plusSlides(1)">Next</button>
+					</div>
+				</div>
+
+				<div class="slide" style="display: none;" >
+					<h1 class="slide-h1">Question 2</h1>
+					<p class="slide-p">
+						What is your Company's USP? (i.e. What is your company's unique selling point?)
+					</p>
+					<input type="text" class="slide-input" id="response" name="company_usp" required />
+					<div class="slide-btn-div">
+						<button class="button primary submit prev" onclick="plusSlides(-1)">Previous</button>
+						<button class="button primary submit next" onclick="plusSlides(1)">Next</button>
+					</div>
+				</div>
+
+				<div class="slide" style="display: none;" > <!-- Keep this div as the last slide, due to the submit button -->
+					<h1 class="slide-h1">Question 3</h1>
+					<p class="slide-p">
+						What is your Email Address?
+					</p>
+					<input type="text" class="slide-input" id="response" name="company_email" required />
+					<div class="slide-btn-div">
+						<button class="button primary submit prev" onclick="plusSlides(-1)">Previous</button>
+						<button class="button primary submit next" onclick="plusSlides(1)">Next</button>
+					</div>
+				
+				</div>
+				<div class="slide" style="display: none;" > <!-- Keep this div as the last slide, due to the submit button -->
+					<h1 class="slide-h1">Question 4</h1>
+					<p class="slide-p">
+						What is your Name?
+					</p>
+					<input type="text" class="slide-input" id="response" name="name" required />
+					<div class="slide-btn-div">
+						<button class="button primary submit prev" onclick="plusSlides(-1)">Previous</button>
+						<button class="button primary submit next" >Submit</button> <!-- replace this with a download link for the ebook -->
+					</div>
+				
+				</div>
+			</form>
+
+				
+                </body>
+
+
+
+                <!-- Scripts -->
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="/static/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/static/assets/js/browser.min.js"></script>
+			<script src="/static/assets/js/breakpoints.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
+			<script src="/static/assets/js/main.js"></script>
