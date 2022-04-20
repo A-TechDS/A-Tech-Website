@@ -22,38 +22,17 @@
 
   gtag('config', 'G-715RDK09PR');
 </script>
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/atds/initial-consultation', text: 'Get Your FREE Consultation NOW!', color: '#0069ff', textColor: '#ffffff', branding: true }); }</script>
+<!-- Calendly badge widget end -->
 	</head>
 	<body class="is-preload landing">
-		<!-- Messenger Chat Plugin Code -->
-		<div id="fb-root"></div>
+	<!-- Calendly badge widget begin -->
 
-		<!-- Your Chat Plugin code -->
-		<div id="fb-customer-chat" class="fb-customerchat">
-		</div>
 	
-		<script>
-		  var chatbox = document.getElementById('fb-customer-chat');
-		  chatbox.setAttribute("page_id", "102463061850425");
-		  chatbox.setAttribute("attribution", "biz_inbox");
-		</script>
-	
-		<!-- Your SDK code -->
-		<script>
-		  window.fbAsyncInit = function() {
-			FB.init({
-			  xfbml            : true,
-			  version          : 'v13.0'
-			});
-		  };
-	
-		  (function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-			fjs.parentNode.insertBefore(js, fjs);
-		  }(document, 'script', 'facebook-jssdk'));
-		</script>
+		
 		<div id="page-wrapper">
 
 
@@ -82,7 +61,7 @@
 								</ul>
 							</li>
 							<li><a href="{{url_for('portfolio')}}">Our Portfolio</a></li>
-							<li><a href="{{url_for('consultation')}}" class="button primary">LETS GO!</a></li>
+							<li><a target="_blank" href="https://calendly.com/atds/initial-consultation" class="button primary">LETS GO!</a></li>
 						</ul> 
 					</nav> 
 				</header>
@@ -118,7 +97,7 @@
 								</div>
 								<div class="col-4 col-12-medium">
 									<p>Then suddely out of no where, someone created the internet. Few years after that someone created the first ever website published. It was a mere few words digitally printed out with no style or colours at all.
-										In those days, it was acceptible to have a website that was just a bunch of text and links to other websites. No one knew what SEO was, or how to get the most traffic to your website etc. It wasn't until the 90s that the internet and websites, truly came into their own.
+										In those days, it was acceptable to have a website that was just a bunch of text and links to other websites. No one knew what SEO was, or how to get the most traffic to your website etc. It wasn't until the 90s that the internet and websites, truly came into their own.
 									</p>
 								</div>
 							</div>
@@ -225,13 +204,15 @@
 				<section id="five" class="wrapper style2 special fade">
 					<div class="container">
 						<header>
-							<h2>Get your FREE EBOOK now!</h2>
-							<p>Only if you're game enough..</p>
+							<img style="width: 80%; height: auto; padding: auto; margin: auto;" src="/static/images/ebook.png" alt="">
+							
 						</header>
 						<form method="post" action="{{ url_for('ebook') }}" class="cta">
+							<h2 style="padding-bottom: 0%;">Get your FREE EBOOK now!</h2>
+							<p style="font-weight: 600;">Only if you're game enough..</p>
 							<div class="row gtr-uniform gtr-50">
 								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-								<div class="col-4 col-12-xsmall"><input type="submit" value="Let's do it!" class="fit primary" /></div>
+								<div class="col-4 col-12-xsmall"><a target="_blank"  href="https://calendly.com/atds/initial-consultation"><input type="submit" value="Let's do it!" class="fit primary" /></a></div>
 								
 							</div>
 						</form>
