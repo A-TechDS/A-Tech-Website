@@ -1,18 +1,23 @@
 .portf-content {
-    display: flex;
+    display: auto;
 }
 
 .portf-card-clickable {
     display: flex;
+    margin: auto; 
+    padding: auto;
     align-items: center;
 }
 
 .portf-card {
-    display: inline-flex;
+    display: inline-column;
     flex-direction: row;
     box-sizing:border-box;
-    align-items: center;
-    margin: 25px 25px 0px 0px;
+  //  align-items: center;
+    width: auto;
+    margin: auto; 
+    padding: auto;
+    margin: 25px 25px 0px 25px;
 
     box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
     border-radius: 25px 50px;
@@ -29,7 +34,7 @@
 
 .column {
     flex-direction: column;
-    height: 100%;
+    height: auto;
     margin: 0px auto;
 }
 
@@ -43,7 +48,7 @@
 
 .portf-card-img {
     display: block;
-    width: 80%;
+    width: 40%;
     margin: 25px auto;
 
     box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
@@ -52,16 +57,35 @@
     box-shadow: 0 0 0.25em 0 #be4259;
 }
 
+.portf-card-img-madeleine{
+    display: block;
+    width: 30%;
+    margin: 25px auto;
+}
+
 .portf-card-desc {
     display: block;
     padding: 50px 50px 0 10px ;
-    font-size: 0.9em;
+    font-size: 1.2em;
+    text-align: center;     
     width: 60%;
 
     text-decoration: none;
     color: #d9d9df;
 }
 
+@media screen and (max-width: 3000px) {
+    .portf-card {
+        flex-direction: column; 
+    }
+
+    .portf-card-desc {
+        width: 100%;
+        padding: 10px 25px;
+        margin: auto;
+    }
+    
+}
 @media screen and (max-width: 1900px) {
     .portf-card {
         flex-direction: column; 
@@ -70,7 +94,7 @@
     .portf-card-desc {
         width: 100%;
         padding: 10px 25px;
-        margin: none;
+        margin: auto;
     }
     
 }
@@ -79,10 +103,16 @@
     .portf-content {
         flex-direction: column;
     }
+    .portf-card-img-madeleine{
+        width: 40%;
+    }
+    .portf-card-img{
+        width: 60%;
+    }
 
     .portf-card, #first  {
         margin: 25px auto;
-        width: 75%;
+        width: auto;
         
     }
 
