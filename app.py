@@ -19,7 +19,14 @@ app.config['MAIL_ASCII_ATTACHMENTS'] = False
 app.config['SECRET_KEY'] = 'secret'
 mail = Mail(app)
 
-    
+
+@app.errorhandler(500)
+def internal_error(error):
+    return render_template('500.html'), 500
+
+@app.errorhandler(404)
+def internal_error(error):
+    return render_template('500.html'), 404
 
 @app.route('/')
 def index():
