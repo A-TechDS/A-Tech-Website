@@ -24,6 +24,10 @@ mail = Mail(app)
 def internal_server_error(e):
     return render_template('500.html'), 500
 
+@app.route('/500')
+def error500():
+    abort(500)
+
 @app.errorhandler(404)
 def internal_error(error):
     return render_template('404.html'), 404
