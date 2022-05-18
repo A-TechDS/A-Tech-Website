@@ -104,6 +104,9 @@ def ebook():
     flash('Your message has been sent!') 
     return redirect('/Consultation')
 
+@app.route('/bms')
+def bms():
+    return redirect('https://atech-bms.azurewebsites.net/')
 
 if __name__ == '__main__':
     app.run(debug=True)

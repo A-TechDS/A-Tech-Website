@@ -2621,7 +2621,7 @@ input[type="radio"] + label:before {
   overflow: hidden;
 }
 
-.image:before {
+/*.image:before {
   content: "";
   display: block;
   position: absolute;
@@ -2632,6 +2632,7 @@ input[type="radio"] + label:before {
   height: 100%;
   z-index: 1;
 }
+*/
 
 .image img {
   border-radius: 4px;
@@ -3623,6 +3624,7 @@ body.landing #header {
   top: 0;
   width: 100%;
 }
+
 
 #banner .content {
   display: inline-block;
